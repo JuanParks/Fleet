@@ -3,20 +3,22 @@ Notes from Introduction:
 - A high level visiability tool that is used for security
 - Runs different applications from Elastic, such as ElasticStack (for data storage), LogStash for ingesting logs, Elastic Fleet/Agent for deploying different agents and log ingesting as well
 - In terms of network and host data, there are applications that generate such 
-    * Elastic Agent - combined all of the ElasticBeats, such as WinLogBeats, FIleBeats,etc. <-- these are to be deployed on the endpoint(s) to ingest Windows event logs or syslog data, 
+    * Elastic Agent - combined all of the ElasticBeats, such as WinLogBeats, FileBeats,etc. <-- these are to be deployed on the endpoint(s) to ingest Windows event logs or syslog data, 
     * OSquery - open source, allows us to query our system as if it is a relational satabase / meaning you can see the users on a box and this can be queryed / this applys to all of the endpoints that 
         OSquery is on and displays the information
     * Steno - this is primarily for pcaps
     * Suricata - generates alerts from network data (can also generate metadata about network traffic)
     * Zeek - also generates metadata about network traffic
     * Strelka - used for file analysis (make sure you know how to extract files from network data)
+
 - Analyst Tools (within the SO "console" / the website interface)
-    * Alerts
-    * Hunt
-    * Dashboard
-    * Cases
+    * Alerts - these come from the network data, and based on certain rules you can have this auto prompt you / can ignore or "escalate" these alerts into cases
+    * Hunt - this shows specific instances of network traffic / can search what happened on specific time frames
+    * Dashboard - shows a visualization of the network traffic that is being picked up / note that if a firewall is blocking certain traffic from an ip, SO will not see it
+    * Cases - a consolidated area to show what you have escalated, specifically things that you have identified to be 
     * CyberChef - integrated tool (swiss army knife in data analysis / base64 decode)
     * Playbook - integrates Sigma to create and enable detection built around Sigma rules
+      * look into whatever Sigma is
     * ElasticFleet - manage our ElasticAgents as well as run live queries using OSquery
     * Attack Navigator - visualize our attack coverage for all of the dectections through playbook
     * Kibana - another window into our data using our Elastic tools
@@ -24,9 +26,9 @@ Notes from Introduction:
     * Look for a standalone deployment mode - meaning these previous tools are all ran together / this is what we used previously 
 
 - Where to get help
-    * securityinion.net/help
+    * securityonion.net/help
     * docs.securityonion.net, FAQ
-    * Community Support Forum (Github DIscussions)
+    * Community Support Forum (Github Discussions)
     * Paid Support by Security Onion Solutions
 
 
