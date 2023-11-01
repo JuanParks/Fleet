@@ -1,1 +1,48 @@
-S
+Security Onion Fundamentals / Setting it up
+Notes from Introduction: 
+- A high level visiability tool that is used for security
+- Runs different applications from Elastic, such as ElasticStack (for data storage), LogStash for ingesting logs, Elastic Fleet/Agent for deploying different agents and log ingesting as well
+- In terms of network and host data, there are applications that generate such 
+    * Elastic Agent - combined all of the ElasticBeats, such as WinLogBeats, FIleBeats,etc. <-- these are to be deployed on the endpoint(s) to ingest Windows event logs or syslog data, 
+    * OSquery - open source, allows us to query our system as if it is a relational satabase / meaning you can see the users on a box and this can be queryed / this applys to all of the endpoints that 
+        OSquery is on and displays the information
+    * Steno - this is primarily for pcaps
+    * Suricata - generates alerts from network data (can also generate metadata about network traffic)
+    * Zeek - also generates metadata about network traffic
+    * Strelka - used for file analysis (make sure you know how to extract files from network data)
+- Analyst Tools (within the SO "console" / the website interface)
+    * Alerts
+    * Hunt
+    * Dashboard
+    * Cases
+    * CyberChef - integrated tool (swiss army knife in data analysis / base64 decode)
+    * Playbook - integrates Sigma to create and enable detection built around Sigma rules
+    * ElasticFleet - manage our ElasticAgents as well as run live queries using OSquery
+    * Attack Navigator - visualize our attack coverage for all of the dectections through playbook
+    * Kibana - another window into our data using our Elastic tools
+
+    * Look for a standalone deployment mode - meaning these previous tools are all ran together / this is what we used previously 
+
+- Where to get help
+    * securityinion.net/help
+    * docs.securityonion.net, FAQ
+    * Community Support Forum (Github DIscussions)
+    * Paid Support by Security Onion Solutions
+
+
+
+
+
+Resources used: 
+https://www.youtube.com/watch?v=ITuVYSxAna4&list=PLljFlTO9rB17azL-HwV4BUWUv7Egmcx3T
+  - link that takes you to a youtube playlist that explains security onion
+
+  - 1st video : Introduction
+  - 2nd video : Installation Part 1 
+  - 3rd video : Installation Part 2 
+  - 4th video : Intro to Analyst Tools
+  - 5th video : Updating Security Onion
+  - 6th video : Alert Triage and Case Creation
+  - 7th video : Threat Hunting
+  - 8th video : Detection Engineering
+  - 9th video : Course Wrap Up
