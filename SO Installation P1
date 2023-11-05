@@ -1,4 +1,14 @@
 SO Installation Part 1:
-- start with the securityonion.net websoite for installation
+- start with the securityonion.net website for installation
 - from the website, go to Software and then download
   - this will take you to a Github that will allow you to download the ISO
+  - check the hash and signature of the download to make sure nothing was corrupted in transit
+    - certutil -hashfile .\(securityonion) SHA256  /// powershell
+    - within the github, it provides a SHA256 hash that you can use to compare to the one that you generated to
+        make sure nothing ended up corrupting
+  - download the security key from the security onion website using wget (command found at 1:41 in the video)
+    - need to install gpg to import
+    - compare the signature with what is provided within the github
+      - there is step by step with syntax on the website 
+  - at the end of the github, it takes you to the security onion website where there is an installion guide
+    - everything previous was leading up to the actual installation, was verifying that everything is setup correctly
