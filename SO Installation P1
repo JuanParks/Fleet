@@ -13,3 +13,5 @@ SO Installation Part 1:
   - at the end of the github, it takes you to the security onion website where there is an installion guide
     - everything previous was leading up to the actual installation, was verifying that everything is setup correctly
 - when accessing the VM, make sure the ISO is selected 
+  - make sure to customize hardware requirements to fit the needs of ssecurity onion
+- after the VM is created, boot it and when prompted to 
