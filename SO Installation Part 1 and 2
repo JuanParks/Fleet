@@ -20,7 +20,7 @@ SO Installation Part 1:
 - you will then be asked to create a administrative username
   - this account is used to use the command line on the Security Onion server / this is not the same as accounts used on the log into the security onion web console
 - press enter when finishing (if needed) to finish up the rest of the configuration
-  -  reboot the VM afterwards (see where ^^ takes you first though / a console with 
+  -  reboot the VM afterwards (see where ^^ takes you first though / a console prompt)
 
 SO Installation Part 2: 
 * In Part 1, the main purpose of it was to get the Security Onion ISO onto a VM, make sure the image is on the VM correctly and create your administrative account
