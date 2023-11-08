@@ -6,4 +6,4 @@ There are special characters that exist within the ELK Query Language that are r
 
 ## Wildcards
 Wildcards allow for general searches to be done. The wildcard character [\*] is used to find any character & any amount of characters within a query.
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Example: If you are searching all documents that contain the words "hacking" and "hack" within the "activity" field, then the query would look like "activity:hack\*" 
+&ebsp:Example: If you are searching all documents that contain the words "hacking" and "hack" within the "activity" field, then the query would look like "activity:hack\*" 
