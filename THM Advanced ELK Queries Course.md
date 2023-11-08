@@ -5,4 +5,4 @@ There are special characters that exist within the ELK Query Language that are r
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Example: If you are searching documents/logs that contain the term/phrase "User+1" in the username field, it will result in an error. If you escape the character though, "username:User\\+1" will return the desired result
 
 ## Wildcards
-Wildcards allow for general searches to be done. The wildcard character [*] is used 
+Wildcards allow for general searches to be done. The wildcard character [*] is used kjm
