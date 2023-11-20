@@ -24,3 +24,4 @@
 > The group will now be named 'date'
 - If you are looking for the title 'NOTICE [sshd]', how would you query for this within Splunk?
 > | rex "NOTICE\s\\[(?\<process\>\w+)"
+>> Make sure to watch the rest of the video,, another good example at the end // start around 10 min (also reference the website that was bookmarked)
