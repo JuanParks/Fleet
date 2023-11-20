@@ -19,4 +19,4 @@
 > \d{4}-\d{2}-\d{2}
 >> If the log has two dates \& you wanted to identify only the first date, then the query would look like ^\d{4}-\d{2}-\d{2}
 - To set a (un)named group... ^(\d{4}-\d{2}-\d{2})  /// ^(?\<date\>\d{4}-\d{2}-\d{2})
-> The group will now be named 'date'
+> The group will now be named 'date''
