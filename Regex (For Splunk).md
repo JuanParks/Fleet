@@ -23,4 +23,4 @@
 - To set a (un)named group... ^(\d{4}-\d{2}-\d{2})  /// ^(?\<date\>\d{4}-\d{2}-\d{2})
 > The group will now be named 'date'
 - If you are looking for the title 'NOTICE [sshd]', how would you query for this within Splunk?
-> | rex "NOTICE\s\[(?\<process\>\w+)"
+> | rex "NOTICE\s\\[(?\<process\>\w+)"
