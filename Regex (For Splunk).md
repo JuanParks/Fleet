@@ -15,8 +15,11 @@
 13. \d{1,3} Matches optional digits from 1 to 3,, useful while extracting IP
 
 ## Examples of how to search/query on Splunk using Regex
+- When searching in Splunk using regex..
+> | rex "\<insert regex here\>"
 - If you are looking for a specific log set with specifc dates, how would you use regex to query for this?
 > \d{4}-\d{2}-\d{2}
 >> If the log has two dates \& you wanted to identify only the first date, then the query would look like ^\d{4}-\d{2}-\d{2}
 - To set a (un)named group... ^(\d{4}-\d{2}-\d{2})  /// ^(?\<date\>\d{4}-\d{2}-\d{2})
-> The group will now be named 'date''
+> The group will now be named 'date'
+- 
